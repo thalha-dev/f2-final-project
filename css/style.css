@@ -1,0 +1,124 @@
+/* GENERAL STYLES */
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  background: #000;
+  color: #fff;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+/* TYPOGRAPHY */
+
+h1 {
+  font-size: 1.8rem;
+}
+
+table,
+th,
+td {
+  border-collapse: collapse;
+}
+
+table,
+th {
+  border: 1px solid #cfc8cf;
+}
+
+td {
+  border-right: 1px solid white;
+}
+
+.form-container input,
+.search-container input {
+  background: #000;
+  color: #fff;
+  border: 1px solid #cfc8cf;
+}
+
+.form-container input[type="submit"] {
+  background: #fff;
+  color: #000;
+  border: 0;
+}
+
+#edit-button,
+#delete-button {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 0;
+  margin: 0;
+  padding-right: 0.5em;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* LAYOUT */
+
+/* parent container */
+
+.container {
+  padding: 2em;
+}
+
+/* form container */
+
+.form-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 1em;
+}
+
+.form-container input {
+  padding: 0.8em;
+}
+
+.form-container input[type="submit"] {
+  grid-row: 3 / 4;
+}
+
+/* search containter */
+
+.search-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+.search-container input {
+  padding: 0.8em;
+}
+
+/* table container */
+
+table {
+  width: 100%;
+}
+
+th {
+  text-align: left;
+}
+
+th,
+td {
+  padding: 1em;
+}
+
+td:last-child {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+}
+
+td:last-child span:last-child {
+  justify-self: flex-end;
+}

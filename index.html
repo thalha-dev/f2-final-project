@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Studuent Management</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Student Management CRUD</h1>
+      <form class="form-container">
+        <input type="text" name="studentname" placeholder="Name" required />
+        <input type="email" name="studentemail" placeholder="Email" required />
+        <input type="number" name="studentgpa" placeholder="GPA" required />
+        <input type="number" name="studentage" placeholder="Age" required />
+        <input type="text" name="studentname" placeholder="Degree" required />
+        <input type="submit" value="Add Student" required />
+      </form>
+      <div class="search-container">
+        <input
+          id="search-input"
+          type="search"
+          name="studentsearch"
+          placeholder="Search By Name, email or degree"
+        />
+      </div>
+      <div class="table-container">
+        <table id="record-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Student Name</th>
+              <th>Email</th>
+              <th>Age</th>
+              <th>GPA</th>
+              <th>Degree</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
